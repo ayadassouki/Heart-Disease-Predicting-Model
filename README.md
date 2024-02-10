@@ -36,9 +36,11 @@ You can install these packages using pip:
 ## Usage
 The model can be utilized by running the provided Python script or Jupyter notebook. You will need to input the patient data in the form of a feature array to receive a prediction.
 # Example of making a prediction
+```python
 input_data = (63, 1, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0, 1)
 prediction = model.predict(input_data)
 print(f"The prediction for the input data is: {'Heart Disease' if prediction[0] == 1 else 'No Heart Disease'}")
+
 
 ### Model Training and Evaluation
 The model was trained on 80% of the provided dataset and evaluated on the remaining 20%. The accuracy on the training data was found to be 85% accurate, and the accuracy on the test data was 81% accurate.
